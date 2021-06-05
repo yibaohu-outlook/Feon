@@ -185,21 +185,21 @@ class System(SystemBase):
             self.calc_KG()
         if self.dim == 2:
             assert direction in ["x","y"],"Support dirction is x,y"
-            if direction is "x":
+            if direction == "x":
                 self.nodes[nid].set_disp(Ux = 0.)
             
-            elif direction is "y":
+            elif direction == "y":
                 self.nodes[nid].set_disp(Uy = 0.)
                 
         elif self.dim == 3:
             assert direction in ["x","y","z"],"Support dirction is x,y,and z"
-            if direction is "x":
+            if direction == "x":
                 self.nodes[nid].set_disp(Ux = 0.)
             
-            elif direction is "y":
+            elif direction == "y":
                 self.nodes[nid].set_disp(Uy = 0.)
                 
-            elif direction is "z":
+            elif direction == "z":
                 self.nodes[nid].set_disp(Uz = 0.)
 
             
